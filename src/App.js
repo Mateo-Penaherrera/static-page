@@ -19,7 +19,7 @@ const NewsHeadlines = () => {
 
   return (
     <div>
-      <h2>Titulares más recientes</h2>
+      <center><h2>Titulares más recientes</h2></center>
       <ul className="news-container"> {/* Agrega la clase del contenedor */}
         {headlines.map(headline => (
           <li key={headline.id} className="news-item"> {/* Agrega la clase del titular */}
