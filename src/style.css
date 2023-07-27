@@ -1,0 +1,87 @@
+/* Estilos para el contenedor de titulares */
+.news-container {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos para cada titular */
+.news-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.news-item h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.news-item p {
+  margin: 10px 0;
+  color: #666;
+}
+
+/* Estilos para el título de la landing page */
+h2 {
+  font-size: 28px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el preloader */
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Estilo de la animación */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilo del círculo del preloader */
+.preloader::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #666;
+  animation: spin 1s linear infinite;
+}
+
+/* Estilos para los botones */
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #45a049;
+}
