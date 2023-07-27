@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import axios from 'axios';
+import './styles.css'; // Importa los estilos CSS
 
-function App() {
+const NewsHeadlines = () => {
+  const [headlines, setHeadlines] = React.useState([]);
+
+  React.useEffect(() => {
+    // Realiza la solicitud a la API de WordPress para obtener los titulares
+    axios.get('https://gk.city/wp-json/wp/v2/posts?per_page=5')
+      .then(response => {
+        // Extrae los datos de las respuestas y actualiza el estado
+        setHeadlines(response.data);
+      })
+      .catch(error => {
+        console.error('Error al obtener los titulares:', error);
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>Titulares más recientes</h2>
+      <ul className="news-container"> {/* Agrega la clase del contenedor */}
+        {headlines.map(headline => (
+          <li key={headline.id} className="news-item"> {/* Agrega la clase del titular */}
+            <h3>{headline.title.rendered}</h3>
+            <p dangerouslySetInnerHTML={{ __html: headline.excerpt.rendered }} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
-}
+};
+
+const App = () => {
+  return (
+    <div>
+      <NewsHeadlines />
+      {/* Otros componentes o contenido de la landing page */}
+    </div>
+  );
+};
 
 export default App;

@@ -1,0 +1,33 @@
+/* Estilos para el contenedor de titulares */
+.news-container {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada titular */
+  .news-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .news-item h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .news-item p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  /* Estilos para el título de la landing page */
+  h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
