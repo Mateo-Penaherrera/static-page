@@ -9,10 +9,11 @@
 .news-item {
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #0153ff;
+  border-radius: 10px;
   display: flex;
   align-items: center;
+  margin: 2%;
 }
 
 .news-item h3 {
@@ -23,7 +24,7 @@
 
 .news-item p {
   margin: 10px 0;
-  color: #666;
+  color: #666666;
 }
 
 /* Estilos para el título de la landing page */
@@ -40,7 +41,7 @@ h2 {
   align-items: center;
   height: 200px;
   font-size: 20px;
-  color: #333;
+  color: #0153ff;
 }
 
 /* Estilo de la animación */
@@ -61,7 +62,7 @@ h2 {
   height: 30px;
   border-radius: 50%;
   border: 5px solid #ccc;
-  border-top-color: #666;
+  border-top-color: #0153ff;
   animation: spin 1s linear infinite;
 }
 
@@ -71,17 +72,33 @@ a {
 }
 
 button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #0153ff;
+  border: 1px solid #0153ff;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
   margin-left: auto;
-  display: block;
+
+  
+}
+
+.Botones {
+  background-color: #0153ff;
+  border: 1px solid #0153ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 2% 2% 2% 2%;
+  
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #ffffff;
+  color: #0153ff;
+  border: 1px solid #0153ff;
 }

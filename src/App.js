@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 
 const Preloader = () => {
   return (
     <div className="preloader">
       {/* Agrega aquí tu animación o mensaje de carga */}
-      Cargando...
     </div>
   );
 };
@@ -32,6 +34,25 @@ const NewsHeadlines = () => {
   return (
     <div>
       <center><h2>Las historias mas recientes</h2></center>
+      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
+      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
+      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
+      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
+      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
+      <center>
+      <div>
+      <a href="https://www.facebook.com/tu_pagina" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faFacebook} />
+      </a>
+      <a href="https://twitter.com/tu_pagina" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faTwitter} />
+      </a>
+      <a href="https://www.instagram.com/tu_pagina" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faInstagram} />
+      </a>
+      {/* Agrega más botones para otras redes sociales */}
+    </div>
+      </center>
       {/* Muestra el Preloader mientras se carga la data */}
       {loading ? (
         <Preloader />
