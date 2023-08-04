@@ -34,11 +34,10 @@ const NewsHeadlines = () => {
   return (
     <div>
       <center><h2>Las historias mas recientes</h2></center>
-      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
-      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
-      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
-      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
-      <a href="https://gk.city" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Visita GK</button></a>
+      <a href="https://gk.city/politica" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Politica</button></a>
+      <a href="https://gk.city/medioambiente" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Medioambiente</button></a>
+      <a href="https://gk.city/opinion" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Opinión</button></a>
+      <a href="https://gk.city/genero" target="_blank" rel="noopener noreferrer" ><button className="Botones" >Género</button></a>
       <center>
       <div>
       <a href="https://www.facebook.com/tu_pagina" target="_blank" rel="noopener noreferrer">
